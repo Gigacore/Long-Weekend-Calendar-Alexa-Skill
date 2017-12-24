@@ -1,0 +1,20 @@
+InAMonth total long weekends in the month of {Month}
+InAMonth long weekends in the month of {Month}
+InAMonth how many total long weekends in the month of {Month}
+InAMonth how many long weekends in the month of {Month}
+InAMonth number of long weekends in the month of {Month}
+InAMonth long weekends in the {Month} month
+InAMonth long weekends in the {Month} month of twenty eighteen
+InAMonth long weekends in the {Month} month of two thousand eighteen
+NextLongWeekend when is the next long weekend
+NextLongWeekend what's the next long weekend
+NextLongWeekend next long weekend
+NextLongWeekend upcoming long weekend
+NextLongWeekend which is the next long weekend
+NextLongWeekend the next long weekend
+TotalLongWeekends how many long weekends in twenty eighteen
+TotalLongWeekends long weekends in twenty eighteen
+TotalLongWeekends total long weekends in twenty eighteen
+TotalLongWeekends number of long weekends
+TotalLongWeekends how many long weekends
+TotalLongWeekends total long weekends

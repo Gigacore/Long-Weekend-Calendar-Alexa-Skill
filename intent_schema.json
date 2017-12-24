@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Month",
+          "type": "monthList"
+        }
+      ],
+      "intent": "InAMonth"
+    },
+    {
+      "intent": "NextLongWeekend"
+    },
+    {
+      "intent": "TotalLongWeekends"
+    }
+  ]
+}
