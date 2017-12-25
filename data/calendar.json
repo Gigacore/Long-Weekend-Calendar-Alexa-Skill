@@ -1,0 +1,81 @@
+{
+	"longWeekends": [{
+			"occassion": "Basanth Panchami",
+			"holiday_dates": 1516602600000,
+			"requireConnectingLeave": false,
+			"dates": [
+				1516429800000,
+				1516516200000,
+				1516602600000
+			]
+		},
+		{
+			"occassion": "Republic Day",
+			"holiday_dates": 1516948200000,
+			"requireConnectingLeave": false,
+			"dates": [
+				1516948200000,
+				1517034600000,
+				1517121000000
+			]
+		},
+		{
+			"occassion": "Mahashivratri",
+			"holiday_dates": 1518503400000,
+			"requireConnectingLeave": true,
+			"connectingLeave": 1518417000000,
+			"dates": [
+				1518244200000,
+				1518330600000,
+				1518417000000,
+				1518503400000
+			]
+		},
+		{
+			"occassion": "Holi",
+			"holiday_dates": 1519972200000,
+			"requireConnectingLeave": true,
+			"connectingLeave": 1519885800000,
+			"dates": [
+				1519885800000,
+				1519972200000,
+				1520058600000,
+				1520145000000
+			]
+		},
+		{
+			"occassion": "Good Friday",
+			"holiday_dates": 1522391400000,
+			"requireConnectingLeave": true,
+			"connectingLeave": 1522305000000,
+			"dates": [
+				1522305000000,
+				1522391400000,
+				1522477800000,
+				1522564200000
+			]
+		},
+		{
+			"occassion": "Buddha Purnima",
+			"holiday_dates": 1525069800000,
+			"requireConnectingLeave": true,
+			"connectingLeave": 1525156200000,
+			"dates": [
+				1524897000000,
+				1524983400000,
+				1525069800000,
+				1525156200000
+			]
+		},
+		{
+			"occassion": "Ed-Ul-Fitr",
+			"holiday_dates": 1529044200000,
+			"requireConnectingLeave": false,
+			"dates": [
+				1529044200000,
+				1529130600000,
+				1529217000000
+			]
+		}
+	]
+}
