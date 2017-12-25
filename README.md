@@ -8,7 +8,7 @@ Amazon Alexa Skill for calendar of long weekends in 2018 (India)
 - How many long weekends left in 2018 / this year?
 - When’s the next long weekend? [Done]
 - Long weekends in the month X [Done]
-= Number of long weekends in the month of X
+- Number of long weekends in the month of X [Done]
 
 ### Contribute
 
