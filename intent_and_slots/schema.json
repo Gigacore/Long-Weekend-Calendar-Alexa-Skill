@@ -1,0 +1,252 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "monthList",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "January",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Jan",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "February",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Feb",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "March",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Mar",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Apr",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "April",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "May",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Mey",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "June",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Jun",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Jul",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "July",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Aug",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "August",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Sept",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "September",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "October",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Oct",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Nov",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "November",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "December",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Dec",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "CountByMonth",
+        "samples": [
+          "total long weekends in the month of {Month}",
+          "how many total long weekends in the month of {Month}",
+          "how many long weekends in the month of {Month}",
+          "number of long weekends in the month of {Month}",
+          "number of long weekends in {Month}"
+        ],
+        "slots": [
+          {
+            "name": "Month",
+            "type": "monthList"
+          }
+        ]
+      },
+      {
+        "name": "LongWeekendsByMonth",
+        "samples": [
+          "long weekends in the {Month} month",
+          "long weekends in {Month}",
+          "what are the long weekends in {Month}",
+          "what long weekends in {Month}",
+          "what are the long weekends in the month of {Month}",
+          "long weekends in the month of {Month}",
+          "which weekends are long weekends in {Month}"
+        ],
+        "slots": [
+          {
+            "name": "Month",
+            "type": "monthList"
+          }
+        ]
+      },
+      {
+        "name": "NextLongWeekend",
+        "samples": [
+          "when is the next long weekend",
+          "what's the next long weekend",
+          "next long weekend",
+          "upcoming long weekend",
+          "which is the next long weekend",
+          "the next long weekend"
+        ],
+        "slots": []
+      },
+      {
+        "name": "TotalLongWeekends",
+        "samples": [
+          "how many long weekends in twenty eighteen",
+          "long weekends in twenty eighteen",
+          "total long weekends in twenty eighteen",
+          "number of long weekends",
+          "how many long weekends",
+          "total long weekends"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "long weekend calendar"
+  }
+}
