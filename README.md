@@ -27,7 +27,9 @@ or
 #### You can ask:
 
 > "Long weekends in January"
+
 > "How many long weekends in 2018?"
+
 > "How many long weekends in the month of January?"
 
 ### Contribute
