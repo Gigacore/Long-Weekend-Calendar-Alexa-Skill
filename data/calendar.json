@@ -46,7 +46,8 @@
 		{
 			"occassion": "Good Friday",
 			"holiday_dates": 1522391400000,
-			"requireConnectingLeave": true,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": "Mahavir Jayanti", 
 			"connectingLeave": 1522305000000,
 			"dates": [
 				1522305000000,

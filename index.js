@@ -50,7 +50,7 @@ const handlers = {
         
         monthArr.map((week, i) => {
             if (week.requireConnectingLeave === false) {
-                listHolidays.push(`${i+1}. With ${week.occassion} being a holiday on ${new Date(week.holiday_dates).toString().slice(0,10)}, you get ${(week.dates).length} days of leaves from ${new Date(week.dates[0]).toString().slice(0,10)} to ${new Date(week.dates[week.dates.length - 1]).toString().slice(0,10)}.`);    
+                listHolidays.push(`${i+1}. With ${week.occassion} being a holiday on ${new Date(week.holiday_dates).toString().slice(0,10)}, you get ${(week.dates).length} days of leaves from ${new Date(week.dates[0]).toString().slice(0,10)} to ${new Date(week.dates[week.dates.length - 1]).toString().slice(0,10)}. <break time="0.5s"/>`);    
             } else {
                 listHolidays.push(`${i+1}. With ${week.occassion} being a holiday on ${new Date(week.holiday_dates).toString().slice(0,10)}, take a leave on ${new Date(week.connectingLeave).toString().slice(0,10)} to get ${(week.dates).length} days of leaves from ${new Date(week.dates[0]).toString().slice(0,10)} to ${new Date(week.dates[week.dates.length - 1]).toString().slice(0,10)}.`);
             }
@@ -59,7 +59,7 @@ const handlers = {
         
         const combineHolidays = listHolidays.join(', ');
     
-        this.emit(':tell', `There are ${count} long weekends in the month of ${month}. ${combineHolidays}`);
+        this.emit(':tell', `There are ${count} long weekends in ${month}. ${combineHolidays.replace(/Mar/ig, 'March')}`);
     }
 };
 
