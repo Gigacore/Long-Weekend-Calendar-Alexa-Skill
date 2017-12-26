@@ -1,6 +1,5 @@
 # Long Weekend Calendar - Alexa Skill
-
-Amazon Alexa Skill for calendar of long weekends in 2018 (India)
+A conversational custom Alexa Skill for the long weekend calendar of 2018 in India written in Node.js
 
 ### WIP 
 
@@ -12,10 +11,6 @@ Amazon Alexa Skill for calendar of long weekends in 2018 (India)
 - How many long weekends left in 2018 / this year?
 - Is this weekend a long weekend?
 - Remind me the next / x long weekend.
-
-### Contribute
-
-Feel free to contribute by forking the repo to add new features or to enhance the existing.
 
 ### Beta Test
 
@@ -34,6 +29,20 @@ or
 > "Long weekends in January"
 > "How many long weekends in 2018?"
 > "How many long weekends in the month of January?"
+
+### Contribute
+Feel free to contribute by forking the repo to add new features or to enhance the existing.
+
+- ```index.js``` contains the primary code for building interactions.
+- ```utils.js``` contains additional reusable functionality for interactions.
+- ```./data/calendar.json``` contains list of long weekends in an array.
+- ```./intent_and_slots/schema.json``` contains the Intents, Slots and custom slot types required to build the "Interaction Model". You can copy paste this in the code editor of Interaction Model builder.
+- You can simply zip the content of the repo and upload to either AWS Lambda Functions or host on your server that's SSL enabled.
+
+### Learn
+
+- If you are new to building Skills, learn more about [Alexa Skills Kit (ASK)](https://developer.amazon.com/alexa-skills-kit).
+- To learn how to design voice-based interactions, read [Alexa.Design](https://developer.amazon.com/alexa).
 
 #### The MIT License (MIT)
 MIT © 2017 Santhosh Sundar
