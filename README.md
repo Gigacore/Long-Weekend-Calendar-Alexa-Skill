@@ -36,14 +36,16 @@ This skill is yet to be published. You can beta test with current state-of-readi
 
 > Say "Alexa, ask long weekend calender for next long weekend"
 
-### Contribute
-Feel free to contribute by forking the repo to add new features or to enhance the existing.
+### Contribute, Remix, Distribute and Share!
+Feel free to contribute by forking the repo to add new features, enhance or build one for long weekends in your country. You are free to use this code base to build and publish a derivate of this Skill. It is optional to give a credit, much appreciated if you do so.
 
 - ```index.js``` contains the primary code for building interactions.
 - ```utils.js``` contains additional reusable functionality for interactions.
 - ```./data/calendar.json``` contains list of long weekends in an array.
-- ```./intent_and_slots/schema.json``` contains the Intents, Slots and custom slot types required to build the "Interaction Model". You can copy paste this in the code editor of Interaction Model builder.
+- ```./intent_and_slots/schema.json``` contains the Intents, Slots and custom slot types required to build the "Interaction Model".
 - You can simply zip the content of the repo and upload to either AWS Lambda Functions or host on your server that's SSL enabled.
+-- Copy the Intents and Slots schema JSON to the code editor in Interaction Model builder.
+-- Save and Build.
 
 ### Learn
 

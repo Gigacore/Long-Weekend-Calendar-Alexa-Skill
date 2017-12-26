@@ -36,30 +36,32 @@ const handlers = {
     },
     'CountByMonth': function() {
         const monthSpoken = (this.event.request.intent.slots.Month.value).toLowerCase();
-        const month = utils.normalizeMonth(monthSpoken);
+        const { filterByMonth, normalizeMonth } = utils;
+        const month = normalizeMonth(monthSpoken);
     
-        this.emit(':tell', `There are ${(utils.filterByMonth(month, data.longWeekends)).length} long weekends in the month of ${month}.`);
+        this.emit(':tell', `There are ${(filterByMonth(month, data.longWeekends)).length} long weekends in the month of ${month}.`);
     },
     'LongWeekendsByMonth': function() {
         const monthSpoken = (this.event.request.intent.slots.Month.value).toLowerCase();
-        const month = utils.normalizeMonth(monthSpoken);
-        const monthArr = utils.filterByMonth(month, data.longWeekends);
-        const count = monthArr.length;
+        const { trimDateStr, filterByMonth, normalizeMonth } = utils;
+        const month = normalizeMonth(monthSpoken);
+        const monthArr = filterByMonth(month, data.longWeekends);
+        const count = (monthArr.length === 0) ? 'no' : monthArr.length;
         
         let listHolidays = [];
         
         monthArr.map((week, i) => {
             if (week.requireConnectingLeave === false) {
-                listHolidays.push(`${i+1}. With ${week.occassion} being a holiday on ${new Date(week.holiday_dates).toString().slice(0,10)}, you get ${(week.dates).length} days of leaves from ${new Date(week.dates[0]).toString().slice(0,10)} to ${new Date(week.dates[week.dates.length - 1]).toString().slice(0,10)}. <break time="0.5s"/>`);    
+                listHolidays.push(`${(count > 1 ? i+1 : '')}. With ${week.occassion} being a holiday on ${trimDateStr(new Date(week.holiday_dates))} ${(week.secondaryOccasion ? 'and ' + week.secondaryOccasion + ' on ' + trimDateStr(new Date(week.connectingLeave)) : '')}, you get ${(week.dates).length} days of leaves from ${trimDateStr(new Date(week.dates[0]))} to ${trimDateStr(new Date(week.dates[week.dates.length - 1]))}.`);
             } else {
-                listHolidays.push(`${i+1}. With ${week.occassion} being a holiday on ${new Date(week.holiday_dates).toString().slice(0,10)}, take a leave on ${new Date(week.connectingLeave).toString().slice(0,10)} to get ${(week.dates).length} days of leaves from ${new Date(week.dates[0]).toString().slice(0,10)} to ${new Date(week.dates[week.dates.length - 1]).toString().slice(0,10)}.`);
+                listHolidays.push(`${(count > 1 ? i+1 : '')}. With ${week.occassion} being a holiday on ${trimDateStr(new Date(week.holiday_dates))}, take a leave on ${trimDateStr(new Date(week.connectingLeave))} to get ${(week.dates).length} days of leaves from ${trimDateStr(new Date(week.dates[0]))} to ${trimDateStr(new Date(week.dates[week.dates.length - 1]))}.`);
             }
   	        
         });
         
-        const combineHolidays = listHolidays.join(', ');
+        const combineHolidays = listHolidays.join(', <break time="0.5s"/> ');
     
-        this.emit(':tell', `There are ${count} long weekends in ${month}. ${combineHolidays.replace(/Mar/ig, 'March')}`);
+        this.emit(':tell', `There ${(count > 1 ? 'are' : 'is')} ${count} long ${(count > 1 ? 'weekends' : 'weekend')} in ${month}. ${combineHolidays.replace(/Mar/ig, 'March')}`);
     }
 };
 
