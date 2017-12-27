@@ -115,3 +115,8 @@ exports.filterByMonth = function(month, arr) {
     
     return monthArr;
 };
+
+// Trims the full date string to shorter 'Thu Mar 12' format.
+exports.trimDateStr = function(str) {
+	return str.toString().slice(0,10)
+};

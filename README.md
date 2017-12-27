@@ -9,8 +9,8 @@ The Long Weekend Calendar lets you plan your holiday. It contains all the possib
 - [x] When’s the next long weekend?
 - [x] Long weekends in the month X
 - [x] Number of long weekends in the month of X
+- [x] How many long weekends left in 2018 / this year?
 - How many long weekends are left in month of x
-- How many long weekends left in 2018 / this year?
 - Is this weekend a long weekend?
 - Remind me the next / x long weekend.
 
@@ -43,9 +43,10 @@ Feel free to contribute by forking the repo to add new features, enhance or buil
 - ```utils.js``` contains additional reusable functionality for interactions.
 - ```./data/calendar.json``` contains list of long weekends in an array.
 - ```./intent_and_slots/schema.json``` contains the Intents, Slots and custom slot types required to build the "Interaction Model".
-- You can simply zip the content of the repo and upload to either AWS Lambda Functions or host on your server that's SSL enabled.
--- Copy the Intents and Slots schema JSON to the code editor in Interaction Model builder.
--- Save and Build.
+- You can simply zip the content of the repo and upload to either create a Function on AWS Lambda or host it on your SSL-enabled web server.
+  - Copy the ```Intents``` and ```Slots``` schema JSON to the code editor in Interaction Model builder.
+  - Save and Build.
+  - Test and Publish
 
 ### Learn
 
