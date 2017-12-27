@@ -50,6 +50,7 @@ Feel free to contribute by forking the repo to add new features, enhance or buil
 - You can simply zip the content of the repo and upload to either create a Function on AWS Lambda or host it on your SSL-enabled web server.
   - Copy the ```Intents``` and ```Slots``` schema JSON to the code editor in Interaction Model builder.
   - Save and Build.
+  - Make necessary changes to the calendar.json
   - Test and Publish
 
 ### Learn
