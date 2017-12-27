@@ -12,12 +12,12 @@ const handlers = {
         this.emit('Init');
     },
     'Init': function() {
-        const greetingMsg = "Welcome to Long Weekend Calendar of 2018. You can ask when's the next long weekend. For more, please say help.";
+        const greetingMsg = data.GREET_MSG;
         this.emit(':askWithCard', greetingMsg);
     },
     'TotalLongWeekends': function() {
         const noOfLongWeekends = `There are ${(data.longWeekends).length} possible long weekends in 2018!`;
-        this.emit(':tellWithCard', noOfLongWeekends, 'Long weekends in 2018', noOfLongWeekends);
+        this.emit(':tellWithCard', noOfLongWeekends, data.SKILL_NAME, noOfLongWeekends);
     },
     'NextLongWeekend': function() {
         const getDate = new Date();
@@ -34,7 +34,7 @@ const handlers = {
         }
         // TODO: Add a Dialog.Directive. Use Generators to yield subsequent long weekends.
         const outputContent = `The next long weekend is from ${trimDateStr(new Date(nextLongWeekend.dates[0]))} to ${trimDateStr(new Date(nextLongWeekend.dates[nextLongWeekend.dates.length - 1]))} on the occassion of ${nextLongWeekend.occassion}.`;
-        this.emit(':tellWithCard', outputContent, 'Long weekends in 2018', outputContent);
+        this.emit(':tellWithCard', outputContent, data.SKILL_NAME, outputContent);
     },
     'CountByMonth': function() {
         const monthSpoken = (this.event.request.intent.slots.Month.value).toLowerCase();
@@ -43,7 +43,7 @@ const handlers = {
         const outputContent = `There are ${(filterByMonth(month, data.longWeekends)).length} long weekends in the month of ${month}.`;
         
         // TODO: Add a Dialog.Directive
-        this.emit(':tellWithCard', outputContent, 'Long weekends in 2018', outputContent);
+        this.emit(':tellWithCard', outputContent, data.SKILL_NAME, outputContent);
     },
     'LongWeekendsByMonth': function() {
         const monthSpoken = (this.event.request.intent.slots.Month.value).toLowerCase();
@@ -55,10 +55,12 @@ const handlers = {
         let listHolidays = [];
         
         monthArr.map((week, i) => {
-            if (!week.requireConnectingLeave) {
-                listHolidays.push(`${(count > 1 ? i+1 : '')}. With ${week.occassion} being a holiday on ${trimDateStr(new Date(week.holiday_dates))} ${(week.secondaryOccasion ? 'and ' + week.secondaryOccasion + ' on ' + trimDateStr(new Date(week.secondaryLeave)) : '')}, you get ${(week.dates).length} days of leaves from ${trimDateStr(new Date(week.dates[0]))} to ${trimDateStr(new Date(week.dates[week.dates.length - 1]))}.`);
+            let { occassion, requireConnectingLeave, holiday_dates, secondaryOccasion, secondaryLeave, connectingLeave, dates } = week;
+            
+            if (!requireConnectingLeave) {
+                listHolidays.push(`${(count > 1 ? i+1 : '')}. With ${occassion} being a holiday on ${trimDateStr(new Date(holiday_dates))} ${(secondaryOccasion ? 'and ' + secondaryOccasion + ' on ' + trimDateStr(new Date(secondaryLeave)) : '')}, you get ${dates.length} days of leaves from ${trimDateStr(new Date(dates[0]))} to ${trimDateStr(new Date(dates[dates.length - 1]))}.`);
             } else {
-                listHolidays.push(`${(count > 1 ? i+1 : '')}. With ${week.occassion} being a holiday on ${trimDateStr(new Date(week.holiday_dates))} ${(week.secondaryOccasion ? 'and ' + week.secondaryOccasion + ' on ' + trimDateStr(new Date(week.secondaryLeave)) : '')}, take a leave on ${trimDateStr(new Date(week.connectingLeave))} to get ${(week.dates).length} days of leaves from ${trimDateStr(new Date(week.dates[0]))} to ${trimDateStr(new Date(week.dates[week.dates.length - 1]))}.`);
+                listHolidays.push(`${(count > 1 ? i+1 : '')}. With ${occassion} being a holiday on ${trimDateStr(new Date(holiday_dates))} ${(secondaryOccasion ? 'and ' + secondaryOccasion + ' on ' + trimDateStr(new Date(secondaryLeave)) : '')}, take a leave on ${trimDateStr(new Date(connectingLeave))} to get ${dates.length} days of leaves from ${trimDateStr(new Date(dates[0]))} to ${trimDateStr(new Date(dates[dates.length - 1]))}.`);
             }
         });
         
@@ -76,7 +78,17 @@ const handlers = {
         const remainingWeekends = longWeekends.filter(week => week.holiday_dates > today);
         const outputContent = `There are ${remainingWeekends.length} possible long weekends remaining in 2018.`;
         
-        this.emit(':tellWithCard', outputContent, 'Long weekends in 2018', outputContent);
+        this.emit(':tellWithCard', outputContent, data.SKILL_NAME, outputContent);
+    },
+    'AMAZON.HelpIntent': function () {
+        const { HELP_CARD, HELP_MSG } = data;
+        this.emit(':tellWithCard', HELP_MSG, data.SKILL_NAME, HELP_CARD);
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', data.STOP_MESSAGE);
+    },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', data.STOP_MESSAGE);
     }
 };
 

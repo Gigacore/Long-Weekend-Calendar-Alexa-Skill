@@ -204,5 +204,10 @@
 				1545719400000
 			]
 		}
-	]
+	],
+	"SKILL_NAME": "Long weekends in 2018",
+	"GREET_MSG": "Welcome to Long Weekend Calendar of 2018. You can ask when's the next long weekend. For more, please say help.",
+	"HELP_MSG": "You can ask: 'How many long weekends are left this year?' or 'What are the long weekends in January' etc. <break time='0.5s'/> For more commands, please see your Alexa app.",
+	"HELP_CARD": "'You can ask the long weekend calendar for: 'Long weekends in January', 'How many long weekends in 2018?', 'Long weekends in the second month of 2018', 'How many long weekends in the month of January?', 'How many long weekends are left this year?' etc",
+	"STOP_MESSAGE": "Goodbye! Enjoy the long weekends!"
 }

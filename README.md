@@ -28,16 +28,18 @@ This skill is yet to be published. You can beta test with current state-of-readi
 
 > "How many long weekends in 2018?"
 
+> "Long weekends in the second month of 2018"
+
 > "How many long weekends in the month of January?"
 
-> "Long weekends in the second month of 2018"
+> "How many long weekends are left this year?"
 
 #### For a Single Interaction:
 
 > Say "Alexa, ask long weekend calender for next long weekend"
 
 ### Contribute, Remix, Distribute and Share!
-Feel free to contribute by forking the repo to add new features, enhance or build one for long weekends in your country. You are free to use this code base to build and publish a derivate of this Skill. It is optional to give a credit, much appreciated if you do so.
+Feel free to contribute by forking the repo to add new features, enhance or build one for long weekends in your country by updating the JSON. You are free to use this code base to build and publish a derivate of this Skill. It is optional to give a credit, much appreciated if you do so.
 
 - ```index.js``` contains the primary code for building interactions.
 - ```utils.js``` contains additional reusable functionality for interactions.
