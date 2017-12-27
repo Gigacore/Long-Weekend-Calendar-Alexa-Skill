@@ -1,6 +1,7 @@
-![Screenshot](https://image.ibb.co/iJ0sNG/alexa_long_weekend_calendar_banner.gif)
-
 # Long Weekend Calendar - Alexa Skill
+
+![Screenshot](https://image.ibb.co/iJ0sNG/alexa_long_weekend_calendar_banner-min.gif)
+
 A conversational custom skill for long weekend calendar of 2018 in India written in Node.js
 
 The Long Weekend Calendar lets you plan your holiday. It contains all the possible long weekends in India for the calendar year of 2018. It also suggests any connecting leaves that you might have to take to effectively use your vacation time at work.
