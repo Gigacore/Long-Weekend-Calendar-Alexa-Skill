@@ -1,6 +1,6 @@
 # Long Weekend Calendar - Alexa Skill
 
-![Screenshot](https://image.ibb.co/iJ0sNG/alexa_long_weekend_calendar_banner-min.gif)
+![Screenshot](https://image.ibb.co/e9XLsG/alexa_long_weekend_calendar_banner_min.gif)
 
 A conversational custom skill for long weekend calendar of 2018 in India written in Node.js
 
