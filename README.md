@@ -6,17 +6,6 @@ A conversational custom skill for long weekend calendar of 2018 in India written
 
 The Long Weekend Calendar lets you plan your holiday. It contains all the possible long weekends in India for the calendar year of 2018. It also suggests any connecting leaves that you might have to take to effectively use your vacation time at work.
 
-### WIP 
-
-- [x] How many long weekends in 2018?
-- [x] When’s the next long weekend?
-- [x] Long weekends in the month X
-- [x] Number of long weekends in the month of X
-- [x] How many long weekends left in 2018 / this year?
-- How many long weekends are left in month of x
-- Is this weekend a long weekend?
-- Remind me the next / x long weekend.
-
 ### Try it out!
 
 The Skill is currently live in India and you can try it out on your Alexa device. You can directly enable it [here](https://alexa.amazon.in/spa/index.html#skills/dp/B078MYWN3S/?ref=skill_dsk_skb_sr_0) or by going to Skills section in your Alexa app and search for ```Long Weekends in 2018```.
@@ -40,6 +29,17 @@ The Skill is currently live in India and you can try it out on your Alexa device
 #### For a Single Interaction:
 
 > Say "Alexa, ask long weekend calender for next long weekend"
+
+### Work in Progress 
+
+- [x] How many long weekends in 2018?
+- [x] When’s the next long weekend?
+- [x] Long weekends in the month X
+- [x] Number of long weekends in the month of X
+- [x] How many long weekends left in 2018 / this year?
+- How many long weekends are left in month of x
+- Is this weekend a long weekend?
+- Remind me the next / x long weekend.
 
 ### Contribute, Remix, Distribute and Share!
 Feel free to contribute by forking the repo to add new features, enhance or build one for long weekends in your country by updating the JSON. You are free to use this code base to build and publish a derivate of this Skill. It is optional to give a credit, much appreciated if you do so.
