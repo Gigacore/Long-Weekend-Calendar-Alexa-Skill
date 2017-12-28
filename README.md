@@ -17,9 +17,9 @@ The Long Weekend Calendar lets you plan your holiday. It contains all the possib
 - Is this weekend a long weekend?
 - Remind me the next / x long weekend.
 
-### Beta Test
+### Try it out!
 
-This skill is pending certification to be published. You can beta test with current state-of-readiness [over here](https://skills-store.amazon.com/deeplink/tvt/ec14b094ef07191c04ccf926232eb550d6bd0b470f9fd0191a9acf1a227ff8e1879f581ac59257b6753487e08538169a0b43ff4cb705a3f427387e8a9a5206c0c6646d403cd62a683f98ed91621dc12acdf8c437613f5c58b926f59a0a79666fa78b6d3e8060ed1671ad9383c032d2).
+The Skill is currently live in India and you can try it out on your Alexa device. You can directly enable it [here](https://alexa.amazon.in/spa/index.html#skills/dp/B078MYWN3S/?ref=skill_dsk_skb_sr_0) or by going to Skills section in your Alexa app and search for ```Long Weekends in 2018```.
 
 #### To start a conversation:
 
