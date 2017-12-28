@@ -10,6 +10,8 @@ The Long Weekend Calendar lets you plan your holiday. It contains all the possib
 
 The Skill is currently live in India and you can try it out on your Alexa device. You can directly enable it [here](https://alexa.amazon.in/spa/index.html#skills/dp/B078MYWN3S/?ref=skill_dsk_skb_sr_0) or by going to Skills section in your Alexa app and search for ```Long Weekends in 2018```.
 
+Also available in [US](https://www.amazon.com/dp/B078MYWN3S/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1514442155&sr=1-1&keywords=long+weekend) and [UK](https://www.amazon.co.uk/dp/B078MYWN3S/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1514442297&sr=1-1&keywords=long+weekend).
+
 #### To start a conversation:
 
 > Say "Open long weekend calendar"
@@ -51,7 +53,7 @@ Feel free to contribute by forking the repo to add new features, enhance or buil
 - You can simply zip the content of the repo and upload to either create a Function on AWS Lambda or host it on your SSL-enabled web server.
   - Copy the ```Intents``` and ```Slots``` schema JSON to the code editor in Interaction Model builder.
   - Save and Build.
-  - Make necessary changes to the calendar.json
+  - Make necessary changes to the ```calendar.json```
   - Test and Publish
 
 ### Learn
