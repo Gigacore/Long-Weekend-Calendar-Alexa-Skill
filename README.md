@@ -32,7 +32,7 @@ Also available in [US](https://www.amazon.com/dp/B078MYWN3S/ref=sr_1_1?s=digital
 
 > Say "Alexa, ask long weekend calender for next long weekend"
 
-### Work in Progress 
+### State of Readiness 
 
 - [x] How many long weekends in 2018?
 - [x] When’s the next long weekend?
