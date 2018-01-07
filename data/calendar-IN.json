@@ -1,0 +1,156 @@
+{
+  "longWeekends": [
+    {
+      "occassion": "Basanth Panchami",
+      "holiday_dates": 1516602600000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1516429800000, 1516516200000, 1516602600000]
+    },
+    {
+      "occassion": "Republic Day",
+      "holiday_dates": 1516948200000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1516948200000, 1517034600000, 1517121000000]
+    },
+    {
+      "occassion": "Mahashivratri",
+      "holiday_dates": 1518503400000,
+      "requireConnectingLeave": true,
+      "secondaryOccasion": false,
+      "connectingLeave": 1518417000000,
+      "dates": [1518244200000, 1518330600000, 1518417000000, 1518503400000]
+    },
+    {
+      "occassion": "Holi",
+      "holiday_dates": 1519972200000,
+      "requireConnectingLeave": true,
+      "secondaryOccasion": false,
+      "connectingLeave": 1519885800000,
+      "dates": [1519885800000, 1519972200000, 1520058600000, 1520145000000]
+    },
+    {
+      "occassion": "Good Friday",
+      "secondaryOccasion": "Mahavir Jayanti",
+      "holiday_dates": 1522391400000,
+      "secondaryLeave": 1522305000000,
+      "requireConnectingLeave": false,
+      "dates": [1522305000000, 1522391400000, 1522477800000, 1522564200000]
+    },
+    {
+      "occassion": "Buddha Purnima",
+      "secondaryOccasion": "Labor Day",
+      "holiday_dates": 1525069800000,
+      "secondaryLeave": 1525156200000,
+      "requireConnectingLeave": false,
+      "dates": [1524897000000, 1524983400000, 1525069800000, 1525156200000]
+    },
+    {
+      "occassion": "Eid Ul Fitrr",
+      "holiday_dates": 1529044200000,
+      "requireConnectingLeave": false,
+      "dates": [1529044200000, 1529130600000, 1529217000000]
+    },
+    {
+      "occassion": "Independence Day",
+      "secondaryOccasion": "Parsi New Year",
+      "holiday_dates": 1534314600000,
+      "requireConnectingLeave": true,
+      "secondaryLeave": 1534487400000,
+      "connectingLeave": 1534401000000,
+      "dates": [
+        1534314600000,
+        1534401000000,
+        1534487400000,
+        1534573800000,
+        1534660200000
+      ]
+    },
+    {
+      "occassion": "Onam",
+      "secondaryOccasion": "Eid Ul-Aadha",
+      "holiday_dates": 1535092200000,
+      "secondaryLeave": 1534919400000,
+      "requireConnectingLeave": true,
+      "connectingLeave": 1535005800000,
+      "dates": [
+        1534919400000,
+        1535005800000,
+        1535092200000,
+        1535178600000,
+        1535265000000
+      ]
+    },
+    {
+      "occassion": "Janamashtami",
+      "holiday_dates": 1535956200000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1535783400000, 1535869800000, 1535956200000]
+    },
+    {
+      "occassion": "Ganesh Chaturthi",
+      "holiday_dates": 1536820200000,
+      "requireConnectingLeave": true,
+      "connectingLeave": 1536906600000,
+      "secondaryOccasion": false,
+      "dates": [1536820200000, 1536906600000, 1536993000000, 1537079400000]
+    },
+    {
+      "occassion": "Gandhi Jayanti",
+      "holiday_dates": 1538461800000,
+      "requireConnectingLeave": true,
+      "connectingLeave": 1538375400000,
+      "secondaryOccasion": false,
+      "dates": [1538202600000, 1538289000000, 1538375400000, 1538461800000]
+    },
+    {
+      "occassion": "Dusshera",
+      "secondaryOccasion": "Rama Navami",
+      "holiday_dates": 1539930600000,
+      "requireConnectingLeave": false,
+      "secondaryLeave": 1539844200000,
+      "dates": [1539844200000, 1539930600000, 1540017000000, 1540103400000]
+    },
+    {
+      "occassion": "Dhanteras",
+      "holiday_dates": 1541399400000,
+      "requireConnectingLeave": true,
+      "connectingLeave": 1541485800000,
+      "secondaryOccasion": false,
+      "dates": [1541226600000, 1541313000000, 1541399400000, 1541485800000]
+    },
+    {
+      "occassion": "Diwali",
+      "secondaryOccasion": "Bhai Duj",
+      "holiday_dates": 1541572200000,
+      "requireConnectingLeave": true,
+      "connectingLeave": 1541658600000,
+      "secondaryLeave": 1541745000000,
+      "dates": [
+        1541572200000,
+        1541658600000,
+        1541745000000,
+        1541831400000,
+        1541917800000
+      ]
+    },
+    {
+      "occassion": "Christmas",
+      "holiday_dates": 1545719400000,
+      "requireConnectingLeave": true,
+      "connectingLeave": 1545633000000,
+      "secondaryOccasion": false,
+      "dates": [1545460200000, 1545546600000, 1545633000000, 1545719400000]
+    }
+  ],
+  "SKILL_NAME": "Long weekends in 2018",
+  "GREET_MSG":
+    "Welcome to Long Weekend Calendar of 2018. You can ask when's the next long weekend. For more, please say help.",
+  "HELP_MSG":
+    "You can ask: 'How many long weekends are left this year?' or 'What are the long weekends in January' etc. <break time='0.5s'/> For more commands, please see your Alexa app.",
+  "HELP_CARD":
+    "'You can ask the long weekend calendar for: 'Long weekends in January', 'How many long weekends in 2018?', 'Long weekends in the second month of 2018', 'How many long weekends in the month of January?', 'How many long weekends are left this year?' etc",
+  "STOP_MESSAGE": "Goodbye! Enjoy the long weekends!"
+}

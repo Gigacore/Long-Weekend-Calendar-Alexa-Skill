@@ -1,0 +1,70 @@
+{
+  "longWeekends": [
+    {
+      "occassion": "Birthday Of Martin Luther King, Jr.",
+      "holiday_dates": 1516035600000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1515862800000, 1515949200000, 1516035600000]
+    },
+    {
+      "occassion": "Washington’s Birthday",
+      "holiday_dates": 1519059600000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1518886800000, 1518973200000, 1519059600000]
+    },
+    {
+      "occassion": "Memorial Day",
+      "holiday_dates": 1527526800000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1527354000000, 1527440400000, 1527526800000]
+    },
+    {
+      "occassion": "Labor Day",
+      "holiday_dates": 1535994000000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1535821200000, 1535907600000, 1535994000000]
+    },
+    {
+      "occassion": "Columbus Day",
+      "holiday_dates": 1539018000000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1538845200000, 1538931600000, 1539018000000]
+    },
+    {
+      "occassion": "Veterans Day",
+      "holiday_dates": 1542042000000,
+      "requireConnectingLeave": false,
+      "secondaryOccasion": false,
+      "dates": [1541869200000, 1541955600000, 1542042000000]
+    },
+    {
+      "occassion": "Thanksgiving Day",
+      "holiday_dates": 1542906000000,
+      "requireConnectingLeave": true,
+      "secondaryOccasion": false,
+      "connectingLeave": 1542992400000,
+      "dates": [1542906000000, 1542992400000, 1543078800000, 1543165200000]
+    },
+    {
+      "occassion": "Christmas Day",
+      "holiday_dates": 1545757200000,
+      "requireConnectingLeave": true,
+      "secondaryOccasion": false,
+      "connectingLeave": 1545670800000,
+      "dates": [1545498000000, 1545584400000, 1545670800000, 1545757200000]
+    }
+  ],
+  "SKILL_NAME": "Long weekends in 2018",
+  "GREET_MSG":
+    "Welcome to Long Weekend Calendar of 2018. You can ask when's the next long weekend. For more, please say help.",
+  "HELP_MSG":
+    "You can ask: 'How many long weekends are left this year?' or 'What are the long weekends in January' etc. <break time='0.5s'/> For more commands, please see your Alexa app.",
+  "HELP_CARD":
+    "'You can ask the long weekend calendar for: 'Long weekends in January', 'How many long weekends in 2018?', 'Long weekends in the second month of 2018', 'How many long weekends in the month of January?', 'How many long weekends are left this year?' etc",
+  "STOP_MESSAGE": "Goodbye! Enjoy the long weekends!"
+}
